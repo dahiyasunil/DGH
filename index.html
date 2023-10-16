@@ -1,70 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr.Grahams' Homes Gallery | Developed by PixelBridge Technologies</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/64631e340b.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr.Grahams' Homes Gallery</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=Borel&family=Love+Light&family=Lovers+Quarrel&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="mb-3">
+      <div class="mx-5">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <img
+              src="./assets/logo.jpg"
+              alt="Dr. Graham's Homes Gallery logo"
+              height="60"
+              class="logo"
+            />
+            <span class="fs-3 mx-3">Dr. Graham's Homes Gallery</span>
+          </a>
 
-<body>
-    <header class="container">
-        <div class="head">
-            <a href="index.html"><img src="assets/logo.jpg" height="100px"></a>
-            <h1>Dr. Graham's Homes Gallery </h1>
+          <ul class="nav nav-pills fs-5 mt-2">
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-secondary">Founding Members</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-secondary">OGB's</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-secondary">Staff</a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </nav>
+    <header>
+      <div class="container-fluid col-xxl-11">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade col-10 col-sm-8 col-lg-6 pt-5"
+          >
+            <div class="carousel-inner" data-bs-ride="carousel">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="./assets/dgh.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Over Century Of Caring For Children
+            </h1>
+            <p class="lead pt-3">
+              The captivating gallery of old pictures, taken during the
+              remarkable era of the 1900s, serves as a nostalgic time capsule
+              that transports us back to bygone days. This carefully curated
+              collection of images encapsulates the essence of a century marked
+              by profound change, capturing the spirit of different cultures,
+              societal shifts, and technological advancements. Each photograph
+              is a window into history, offering glimpses of moments frozen in
+              time – from candid snapshots of everyday life to iconic events
+              that shaped the course of history. This gallery not only preserves
+              the visual record of a bygone era but also invites us to reflect
+              on our roots, connecting the past with the present and fostering a
+              deeper understanding of the intricate tapestry of human
+              experience. As we peruse these evocative photographs, we embark on
+              a visual journey that sparks curiosity, stirs emotions, and
+              underscores the timeless power of imagery to transcend temporal
+              boundaries.
+            </p>
+          </div>
         </div>
-        <div class="menus">
-            <ul>
-                <a href="founding.html"><li>Founding Members</li></a>
-                <a href="ogb.html"> <li>OGB's</li></a>
-                <a href="staff.html"><li>Staffs</li></a>
-            </ul>
-        </div>
-
+      </div>
     </header>
-
-    <section class="main">
-        <h2>OVER A CENTURY OF CARING FOR CHILDREN</h2>
-        <input type="text" placeholder="search for images">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-
-    </section>
-
-    <section class="text">
-        <p> The captivating gallery of old pictures, taken during the remarkable era of the 1900s, serves as a nostalgic time capsule
-             that transports us back to bygone days. This carefully curated collection of images encapsulates the essence of a century
-              marked by profound change, capturing the spirit of different cultures, societal shifts, and technological advancements. 
-              Each photograph is a window into history, offering glimpses of moments frozen in time – from candid snapshots of everyday
-               life to iconic events that shaped the course of history. This gallery not only preserves the visual record of a bygone era
-                but also invites us to reflect on our roots, connecting the past with the present and fostering a deeper understanding of the
-                 intricate tapestry of human experience. As we peruse these evocative photographs, we embark 
-            on a visual journey that sparks curiosity, stirs emotions, and underscores the timeless power of imagery to transcend temporal boundaries.
-        </p><hr>
-
-    </section>
-    <h2>FEATURED IMAGES <i class="fa-solid fa-camera"></i></h2>
-    <section class="feature">
-        
-        <div class="imgs">
-            <img src="assets/ell.png">
-            <img src="assets/ell.png">
-
+    <main>
+      <div class="container-fluid col-xxl-11 px-4 my-4">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./assets/elliot-sm.png" class="d-block w-100" alt="" />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                src="./assets/raw-crop.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/raw3-crop.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-    </section>
+      </div>
+    </main>
+    <!-- <div class="container-fluid footer">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-2 mt-5"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2023 Dr. Graham's Homes | All rights reserved.</span
+          >
+        </div>
+      </footer>
+    </div> -->
+    <div class="ontainer-fluid footer">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-2 mt-5 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center mx-3">
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2023 Dr. Graham's Homes | All rights reserved.</span
+          >
+        </div>
 
-    <section class="footer">
-        <p> &copy; 2023 Dr. Graham's Homes | All rights reserved.</p>
-        <p>Powered by PixelBridge Technologies</p>
+        <div class="nav col-md-4 justify-content-end list-unstyled d-flex mx-3">
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >Powered by PixelBridge Technologies</span
+          >
+        </div>
+      </footer>
+    </div>
 
-    </section>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
